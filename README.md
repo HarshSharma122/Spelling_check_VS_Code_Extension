@@ -1,0 +1,2 @@
+# spelling-check README
+Test
