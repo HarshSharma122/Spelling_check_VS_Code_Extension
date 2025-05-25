@@ -1,0 +1,47 @@
+{
+  "name": "spelling-check",
+  "displayName": "spelling Check",
+  "description": "A Spelling Check Extension",
+  "publisher": "HarshS",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.100.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:extension.showSelectedText"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "spelling-check.spellingCheck",
+        "title": "Spelling Check"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@types/vscode": "^1.100.0",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.5.2",
+    "eslint": "^9.25.1"
+  },
+  "dependencies": {
+    "axios": "^1.9.0",
+    "dictionary-en": "^4.0.0",
+    "dictionary-en-us": "^3.0.0",
+    "fast-xml-parser": "^5.2.3",
+    "tree-sitter": "^0.21.1",
+    "tree-sitter-javascript": "^0.23.1",
+    "typo-js": "^1.2.5"
+  }
+}
