@@ -4,6 +4,7 @@
   "description": "A Spelling Check Extension",
   "publisher": "HarshS",
   "version": "0.0.1",
+  
   "engines": {
     "vscode": "^1.100.0"
   },
